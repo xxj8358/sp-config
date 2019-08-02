@@ -1,6 +1,11 @@
 spring:
   application:
     name: zuul
+  rabbitmq:
+    host: 192.168.126.131
+    port: 5672
+    username: admin
+    password: admin
     
 server:
   port: 3001
@@ -13,12 +18,12 @@ eureka:
 zuul:
   retryable: true
   
-# zuul 会过滤敏感 http 协议头，默认过滤以下协议头：
+# zuul 浼氳繃婊ゆ晱鎰� http 鍗忚澶达紝榛樿杩囨护浠ヤ笅鍗忚澶达細
 
 # Cookie
 # Set-Cookie
 # Authorization
-#  可以设置 zuul 不过滤这些协议头
+#  鍙互璁剧疆 zuul 涓嶈繃婊よ繖浜涘崗璁ご
 #zuul:
 #  sensitive-headers: 
 
